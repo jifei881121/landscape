@@ -1,11 +1,7 @@
 name: build and release
 
-on:
-  release:
-    types: [published]
-  push:
-    tags:
-    - 'v*'
+on: workflow_dispatch
+
 jobs:
   build-rust:
     runs-on: ubuntu-latest
